@@ -89,9 +89,10 @@ _Comment out line 1536 in utils.js to have midi-qol not give a notification_
 
 ### Automated Animations
 
-File da importare per i vari sistemi
+Problem: When I use the spells no effects are showed even if Automated Animation says there is a global match found for the spell any kind of incompatibility or stuff like that maybe ?
 
-https://discord.com/channels/772596237605011466/9174248893407846
+Response: **You probably had Roll Automation turned off in the Midi settings.**
+
 
 ## Sources of premade stuff for Midiqol:
 
