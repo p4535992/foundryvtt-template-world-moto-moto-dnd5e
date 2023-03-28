@@ -88,10 +88,13 @@ const getManifest = () => {
         json.root = `dist`;
     }
 
+    const worldPath = path.join(json.root, `world.json`);
     const modulePath = path.join(json.root, `module.json`);
     const systemPath = path.join(json.root, `system.json`);
-
-    if (fs.existsSync(modulePath)) {
+    if (fs.existsSync(worldPath)) {
+        json.file = loadJson(worldPath);
+        json.name = `world.json`;
+    } else if (fs.existsSync(modulePath)) {
         json.file = loadJson(modulePath);
         json.name = `module.json`;
     } else if (fs.existsSync(systemPath)) {
@@ -314,14 +317,7 @@ const copyFiles = async() => {
         for (const entity of statics) {
 
             const p = path.join(`.`, entity);
-            /* MOD 4535992
-            let p:string|null = null;
-            if (entity.endsWith(`module.json`) || entity.endsWith(`templates`) || entity.endsWith(`lang`)) {
-              p = path.join(`src`, entity);
-            } else {
-              p = path.join(`assets`, entity);
-            }
-            */
+
             if (fs.existsSync(p)) {
                 if (fs.lstatSync(p).isDirectory())
                     recursiveFileSearch(p, (err, res) => {
@@ -372,17 +368,6 @@ const cleanDist = async () => {
 
     await getFiles(path.resolve(`./dist`));
     for(const file of files) {
-        /* MOD 4535992
-        if (file.endsWith(`bundle.js`) ||
-            file.endsWith(`.css`) ||
-            file.endsWith(`module.json`) ||
-            file.endsWith(`templates`) ||
-            file.endsWith(`lang`)||
-            file.endsWith(`.json`) ||
-            file.endsWith(`.html`)){
-            continue;
-        }
-        */
         console.warn(`Cleaning ` + path.relative(process.cwd(), file));
         await fs.promises.unlink(file);
     }
@@ -532,7 +517,8 @@ async function packageBuild() {
             }
 
             // Initialize the zip file
-            const zipName = `module.zip`; // `${manifest.file.name}-v${manifest.file.version}.zip`; // MOD 4535992
+            //const zipName = `module.zip`; // `${manifest.file.name}-v${manifest.file.version}.zip`; // MOD 4535992
+            const zipName = `world.zip`;
             const zipFile = fs.createWriteStream(path.join(`package`, zipName));
             //@ts-ignore
             const zip = archiver(`zip`, { zlib: { level: 9 } });
@@ -551,15 +537,11 @@ async function packageBuild() {
 
             // Add the directory with the final code
             // zip.directory(`dist/`, manifest.file.name);
-            const moduleJson = JSON.parse(fs.readFileSync('./module.json'));
+            // const moduleJson = JSON.parse(fs.readFileSync('./module.json'));
+            const moduleJson = JSON.parse(fs.readFileSync('./world.json'));
             zip.directory(`dist/`, moduleJson.id);
-            /* MOD 4535992
-            zip.file(`dist/module.json`, { name: `module.json` });
-            zip.file(`dist/bundle.js`, { name: `bundle.js` });
-            zip.glob(`dist/*.css`, {cwd:__dirname});
-            zip.directory(`dist/lang`, `lang`);
-            zip.directory(`dist/templates`, `templates`);
-            */
+            
+
             console.log(`Zip files`);
 
             zip.finalize();
@@ -640,7 +622,8 @@ const updateManifest = (cb) => {
 
         /* Update URLs */
 
-        const result = `${repoURL}/releases/download/${manifest.file.version}/module.zip`;
+        //const result = `${repoURL}/releases/download/${manifest.file.version}/module.zip`;
+        const result = `${repoURL}/releases/download/${manifest.file.version}/world.zip`;
 
         manifest.file.url = repoURL;
         manifest.file.manifest = `${rawURL}/${manifest.file.version}/${manifestRoot}/${manifest.name}`;
