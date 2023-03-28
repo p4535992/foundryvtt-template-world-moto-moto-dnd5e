@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "resetKeys": false,
   "safeMode": false,
+  "languages": [],
   "packs": [],
 	"scripts": [],
 	"esmodules": [],
