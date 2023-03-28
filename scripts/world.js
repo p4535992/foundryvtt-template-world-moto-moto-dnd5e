@@ -1,5 +1,6 @@
+/*
 const logo = document.querySelector("img#logo");
-logo.src = "worlds/the-sky-isles/styles/ws.svg";
+logo.src = "worlds/CONSTANTS.MODULE_ID/styles/ws.svg";
 logo.addEventListener("click", () =>
     window.open(game.world.data.authors
         .filter(a => a.name === "World Smiths")
@@ -17,3 +18,4 @@ img#logo:hover {
     filter: brightness(0.8);
 }`;
 document.head.appendChild(style);
+*/

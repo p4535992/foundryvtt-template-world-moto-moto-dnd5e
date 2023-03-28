@@ -11,6 +11,7 @@
 
 # Misc
 *.log
+.husky/
 
 # OSX
 .DS_Store
@@ -26,3 +27,8 @@ settings.db
 users.db
 
 # Not used in this world database files
+combats.db
+playlists.db
+tables.db
+cards.db
+# macros.db

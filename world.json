@@ -1,64 +1,36 @@
-// replace all instances of `abbr` with the abbreviation of your world including type and suffix
-// remove all comments from this file to make it valid JSON
 {
-  "name": "abbr",
-  "title": "Full Name Here",
-  "description": "<p>Description here</p>\n<hr />\n<blockquote>\n<p><strong>System: </strong>DnD5e<br /><strong>Starting Level: </strong>Any<br /><strong>Length:</strong> Short multi-session (10-12 hours)<br /><strong>Language:</strong> English</p>\n</blockquote>\n<hr />\n<p>World Smiths is a community of world builders creating high-quality world content for Foundry VTT.</p>\n<div style=\"display:flex;gap:1em\"><a style=\"flex:100%\" href=\"https://world-smiths.github.io/page/\" target=\"_blank\" rel=\"noopener\"><button type=\"button\">Our Projects</button></a><a style=\"flex:100%\" href=\"https://discord.gg/2YCFD8fxG7\" target=\"_blank\" rel=\"noopener\"><button type=\"button\">Our Discord</button></a></div>",
-  "author": "World Smiths",
-  "authors": [
-    {
-      "name": "World Smiths",
-      "url": "https://world-smiths.github.io/page"
-    },
-    {
-      "name": "Publisher Name",
-      "url": "https://publisher.com/"
-    }
-  ],
-  "url": "https://world-smiths.github.io/page/main.html",
-  "license": "https://raw.githubusercontent.com/World-Smiths/abbr/main/LICENSE.md",
-  "readme": "https://raw.githubusercontent.com/World-Smiths/abbr/main/README.md",
-  "bugs": "https://discord.gg/xXxXxXxX", // see ../../wiki/discord-invite-link.md
-  "changelog": "https://raw.githubusercontent.com/World-Smiths/abbr/main/CHANGELOG.md",
-  "flags": {
-    "allowBugReporter": true
-  },
-  "version": "0.x.x",
-  "scripts": [],
-  "esmodules": [
-    "scripts/world.js"
-  ],
-  "styles": [
-    "styles/ws.css"
-  ],
-  "languages": [], // leave this empty unless you are including language file in your world
-  "packs": [],
-
-  "system": "dnd5e",
-  "dependencies": [
-    {
-      "name": "module-name",
-      "type": "module",
-      "manifest": "https://raw.githubusercontent.com/user/repo/main/module.json"
-    }
-  ],
-  "socket": false,
-
-  "manifest": "https://raw.githubusercontent.com/World-Smiths/abbr/main/world.json",
-  "download": "https://raw.githubusercontent.com/World-Smiths/abbr/main/package.zip",
-  "protected": false,
-  
-  "background": "worlds/abbr/scenes/backgrounds/start.webp",
-  "coreVersion": "9.269",
+  "id": "template-world-moto-moto-dnd5e-world",
+  "title": "Template World Moto Moto dnd5e",
+  "description": "",
+  "version": "1.0.0",
   "resetKeys": false,
   "safeMode": false,
-  "systemVersion": "1.6.3",
-
-  "manifestPlusVersion": "1.2.0",
-  "media": [
-    {
-      "type": "cover",
-      "url": "https://raw.githubusercontent.com/World-Smiths/abbr/main/cover.webp"
-    }
-  ]
+  "packs": [],
+	"scripts": [],
+	"esmodules": [],
+	"styles": [],
+	"compatibility": {
+		"minimum": 10,
+		"verified": 10,
+		"maximum": 10
+	},
+	"manifestPlusVersion": "1.2.1",
+	"url": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e",
+	"manifest": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/releases/latest/download/module.json",
+	"download": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/releases/latest/download/module.zip",
+	"readme": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/blob/v1.0.0/README.md",
+	"changelog": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/blob/v1.0.0/changelog.md",
+	"bugs": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/issues",
+	"allowBugReporter": true,
+	"relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [],
+		"conflicts": []
+	}
 }

@@ -9,3 +9,5 @@ This directory should contain a folder for each actor in the world which contain
 | **actors/\<actor-name>/multisided/\<##>.webp** | Multisided actor token images                             |
 | **actors/\<actor-name>/token.webp**            | Actor token image                                         |
 | **actors/\<actor-name>/avatar.webp**           | Actor avatar image                                        |
+| **actors/\<actor-name>_token.webp**            | Actor token image                                         |
+| **actors/\<actor-name>_avatar.webp**           | Actor avatar image                                        |

@@ -1,130 +1,162 @@
-// replace all instances of `abbr` with the abbreviation of your world including type and suffix
-// remove all comments from this file to make it valid JSON
 {
-  "name": "abbr-module",
-  "title": "Full Name Here",
-  "description": "<p>Description here</p>\n<hr />\n<blockquote>\n<p><strong>System: </strong>DnD5e<br /><strong>Starting Level: </strong>Any<br /><strong>Length:</strong> Short multi-session (10-12 hours)<br /><strong>Language:</strong> English</p>\n</blockquote>\n<hr />\n<p>World Smiths is a community of world builders creating high-quality world content for Foundry VTT.</p>\n<div style=\"display:flex;gap:1em\"><a style=\"flex:100%\" href=\"https://world-smiths.github.io/page/\" target=\"_blank\" rel=\"noopener\"><button type=\"button\">Our Projects</button></a><a style=\"flex:100%\" href=\"https://discord.gg/2YCFD8fxG7\" target=\"_blank\" rel=\"noopener\"><button type=\"button\">Our Discord</button></a></div>",
-  "author": "World Smiths",
-  "authors": [
+	"id": "template-world-moto-moto-dnd5e-module",
+	"title": "Automated Evocations - Companion Manager Variant",
+	"description": "A user interface to manage companions with summoning animations and automated summoning for spells",
+	"version": "1.0.0",
+	"authors": [
+		{
+			"name": "p4535992",
+			"url": "https://github.com/p4535992",
+			"discord": "",
+			"twitter": "",
+			"patreon": "p4535992",
+			"github": "p4535992",
+			"ko-fi": "",
+			"reddit": "",
+			"email": ""
+		}
+	],
+	"type": "module",
+	"socket": true,
+	"includes": [
+		"./assets/**",
+		"./lang/**",
+		"./languages/**",
+		"./scripts/**",
+		"./styles/**",
+		"./templates/**",
+		"./module.json",
+		"./README.md",
+		"./icons/**",
+		"./packs/**"
+	],
+	"media": [
+		{
+			"type": "icon",
+			"location": ""
+		},
+		{
+			"type": "cover",
+			"location": ""
+		},
+		{
+			"type": "screenshot",
+			"location": ""
+		}
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		}
+	],
+	"packs": [
     {
-      "name": "World Smiths",
-      "url": "https://world-smiths.github.io/page"
-    },
-    {
-      "name": "Publisher Name",
-      "url": "https://publisher.com/"
-    }
-  ],
-  "url": "https://world-smiths.github.io/page/main.html",
-  "license": "https://raw.githubusercontent.com/World-Smiths/abbr/main/LICENSE.md",
-  "readme": "https://raw.githubusercontent.com/World-Smiths/abbr/main/README.md",
-  "bugs": "https://discord.gg/xXxXxXxX", // see ../../wiki/discord-invite-link.md
-  "changelog": "https://raw.githubusercontent.com/World-Smiths/abbr/main/CHANGELOG.md",
-  "flags": {
-    "allowBugReporter": true
-  },
-
-  "version": "0.x.x",
-  "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": 9,
-
-  "scripts": [],
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "styles": [
-    "styles/ws.css"
-  ],
-  "languages": [], // leave this empty unless you are including language file in your world
-  // Only include the entries that your world uses
-  "packs": [ // Actors, Items, Journal Entries, Macro Commands, Playlists, RollTables or Scenes
-    {
-      "name": "actors",
-      "label": "ABBR",
+      "name": "template-world-moto-moto-dnd5e-module-actors",
+      "label": "World Actors",
       "path": "packs/actors.db",
-      "entity": "Actor",
       "type": "Actor",
-      "system": "dnd5e"
+      "system": "dnd5e",
+      "private": false,
+      "module": "template-world-moto-moto-dnd5e-module"
     },
     {
-      "name": "cards",
-      "label": "ABBR",
+      "name": "template-world-moto-moto-dnd5e-module-cards",
+      "label": "template-world-moto-moto-dnd5e-module",
       "path": "packs/cards.db",
-      "entity": "Card",
       "type": "Card",
-      "system": "dnd5e"
+      "system": "dnd5e",
+      "private": false,
+      "module": "template-world-moto-moto-dnd5e-module"
     },
     {
-      "name": "items",
-      "label": "ABBR",
+      "name": "template-world-moto-moto-dnd5e-module-items",
+      "label": "template-world-moto-moto-dnd5e-module",
       "path": "packs/items.db",
-      "entity": "Item",
       "type": "Item",
-      "system": "dnd5e"
+      "system": "dnd5e",
+      "private": false,
+      "module": "template-world-moto-moto-dnd5e-module"
     },
     {
-      "name": "journals",
-      "label": "ABBR",
+      "name": "template-world-moto-moto-dnd5e-module-journals",
+      "label": "template-world-moto-moto-dnd5e-module",
       "path": "packs/journal.db",
-      "entity": "JournalEntry",
       "type": "JournalEntry",
-      "system": "dnd5e"
+      "system": "dnd5e",
+      "private": false,
+      "module": "template-world-moto-moto-dnd5e-module"
     },
     {
-      "name": "macros",
-      "label": "ABBR",
+      "name": "template-world-moto-moto-dnd5e-module-macros",
+      "label": "template-world-moto-moto-dnd5e-module",
       "path": "packs/macros.db",
-      "entity": "Macro",
       "type": "Macro",
-      "system": "dnd5e"
+      "system": "dnd5e",
+      "private": false,
+      "module": "template-world-moto-moto-dnd5e-module"
     },
     {
-      "name": "playlists",
-      "label": "ABBR",
+      "name": "template-world-moto-moto-dnd5e-module-playlists",
+      "label": "template-world-moto-moto-dnd5e-module",
       "path": "packs/playlists.db",
-      "entity": "Playlist",
       "type:": "Playlist",
-      "system": "dnd5e"
+      "system": "dnd5e",
+      "private": false,
+      "module": "template-world-moto-moto-dnd5e-module"
     },
     {
-      "name": "tables",
-      "label": "ABBR",
+      "name": "template-world-moto-moto-dnd5e-module-tables",
+      "label": "template-world-moto-moto-dnd5e-module",
       "path": "packs/tables.db",
-      "entity": "RollTable",
       "type": "RollTable",
-      "system": "dnd5e"
+      "system": "dnd5e",
+      "private": false,
+      "module": "template-world-moto-moto-dnd5e-module"
     },
     {
-      "name": "scenes",
-      "label": "ABBR",
+      "name": "template-world-moto-moto-dnd5e-module-scenes",
+      "label": "template-world-moto-moto-dnd5e-module",
       "path": "packs/scenes.db",
-      "entity": "Scene",
       "type": "Scene",
-      "system": "dnd5e"
+      "system": "dnd5e",
+      "private": false,
+      "module": "template-world-moto-moto-dnd5e-module"
     }
-  ],
-
-  "system": ["dnd5e"],
-  "dependencies": [
-    {
-      "name": "scene-packer",
-      "type": "module"
-    },
-    {
-      "name": "module-name",
-      "type": "module",
-      "manifest": "https://raw.githubusercontent.com/user/repo/main/module.json"
-    }
-  ],
-
-  "manifest": "https://raw.githubusercontent.com/World-Smiths/abbr/main/world.json",
-  "download": "https://raw.githubusercontent.com/World-Smiths/abbr/main/package.zip",
-  
-  "manifestPlusVersion": "1.2.0",
-  "media": [
-    {
-      "type": "cover",
-      "url": "https://raw.githubusercontent.com/World-Smiths/abbr/main/cover.webp" // link to a cover image
-    }
-  ]
+	],
+	"scripts": [],
+	"esmodules": [ "scripts/module.js"],
+	"styles": [],
+	"compatibility": {
+		"minimum": 10,
+		"verified": 10,
+		"maximum": 10
+	},
+	"manifestPlusVersion": "1.2.1",
+	"url": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e",
+	"manifest": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/releases/latest/download/module.json",
+	"download": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/releases/latest/download/module.zip",
+	"readme": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/blob/v1.0.0/README.md",
+	"changelog": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/blob/v1.0.0/changelog.md",
+	"bugs": "https://github.com/p4535992/foundryvtt-template-world-moto-moto-dnd5e/issues",
+	"allowBugReporter": true,
+	"relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "2.0.3",
+          "verified": "2.0.3"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "wall-height"
+      }
+    ],
+		"conflicts": []
+	}
 }

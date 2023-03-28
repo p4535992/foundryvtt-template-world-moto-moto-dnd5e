@@ -1,0 +1,27 @@
+name: Trigger Release Creation
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PAYLOAD: |
+        {
+          "repository": "${{github.event.repository.name}}",
+          "sha": "f4aa40d53efb23363b18db5ccfc167adccd65fca",
+          "tag_name": "${{github.event.release.tag_name}}"
+        }
+    steps:
+      - uses: octokit/request-action@v2.x
+        with:
+          route: POST /repos/{owner}/{repo}/dispatches
+          owner: arcanistzed
+          repo: world-smiths-releases
+          event_type: trigger-release
+          client_payload: ${{ env.PAYLOAD }}
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.WORLD_SMITHS_RELEASES }}
