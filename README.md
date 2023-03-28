@@ -28,19 +28,19 @@ The purpose is to help the "I want to be a master" without driving them crazy wi
 
 ### Midi does not work with:
 
-Ready Set Roll
-Better Rolls for 5e
-Roll Groups
-Fast Rolling by Default
-Fast Rolls or Quick Rolls
-Dice Tooltips
-Taragnor's Gm Paranoia
-WIRE(Whistler's Item Rolls Extended)
-Minimal Roll Enhancements
-Retroactive Advantage/Disadvantage
-Max Crit
-Multiattack 5e
-Effective Transferral
+- Ready Set Roll
+- Better Rolls for 5e
+- Roll Groups
+- Fast Rolling by Default
+- Fast Rolls or Quick Rolls
+- Dice Tooltips
+- Taragnor's Gm Paranoia
+- WIRE(Whistler's Item Rolls Extended)
+- Minimal Roll Enhancements
+- Retroactive Advantage/Disadvantage
+- Max Crit
+- Multiattack 5e
+- Effective Transferral
 
 ### Midi has Concentration conflicts with these modules (Only use one, shut the others off) :
 
