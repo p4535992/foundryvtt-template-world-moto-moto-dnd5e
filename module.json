@@ -54,7 +54,7 @@
 	"packs": [
     {
       "name": "template-world-moto-moto-dnd5e-module-actors",
-      "label": "World Actors",
+      "label": "World Module Actors",
       "path": "packs/actors.db",
       "type": "Actor",
       "system": "dnd5e",
@@ -63,7 +63,7 @@
     },
     {
       "name": "template-world-moto-moto-dnd5e-module-cards",
-      "label": "template-world-moto-moto-dnd5e-module",
+      "label": "World Module Cards",
       "path": "packs/cards.db",
       "type": "Card",
       "system": "dnd5e",
@@ -72,7 +72,7 @@
     },
     {
       "name": "template-world-moto-moto-dnd5e-module-items",
-      "label": "template-world-moto-moto-dnd5e-module",
+      "label": "World Module Items",
       "path": "packs/items.db",
       "type": "Item",
       "system": "dnd5e",
@@ -81,7 +81,7 @@
     },
     {
       "name": "template-world-moto-moto-dnd5e-module-journals",
-      "label": "template-world-moto-moto-dnd5e-module",
+      "label": "World Module Journals",
       "path": "packs/journal.db",
       "type": "JournalEntry",
       "system": "dnd5e",
@@ -90,7 +90,7 @@
     },
     {
       "name": "template-world-moto-moto-dnd5e-module-macros",
-      "label": "template-world-moto-moto-dnd5e-module",
+      "label": "World Module Macros",
       "path": "packs/macros.db",
       "type": "Macro",
       "system": "dnd5e",
@@ -99,7 +99,7 @@
     },
     {
       "name": "template-world-moto-moto-dnd5e-module-playlists",
-      "label": "template-world-moto-moto-dnd5e-module",
+      "label": "World Module Playlists",
       "path": "packs/playlists.db",
       "type:": "Playlist",
       "system": "dnd5e",
@@ -108,7 +108,7 @@
     },
     {
       "name": "template-world-moto-moto-dnd5e-module-tables",
-      "label": "template-world-moto-moto-dnd5e-module",
+      "label": "World Module Tables",
       "path": "packs/tables.db",
       "type": "RollTable",
       "system": "dnd5e",
@@ -117,7 +117,7 @@
     },
     {
       "name": "template-world-moto-moto-dnd5e-module-scenes",
-      "label": "template-world-moto-moto-dnd5e-module",
+      "label": "World Module Scenes",
       "path": "packs/scenes.db",
       "type": "Scene",
       "system": "dnd5e",
@@ -145,16 +145,13 @@
     "systems": [
       {
         "id": "dnd5e",
-        "type": "system",
-        "compatibility": {
-          "minimum": "2.0.3",
-          "verified": "2.0.3"
-        }
+        "type": "system"
       }
     ],
     "requires": [
       {
-        "id": "wall-height"
+        "id": "scene-packer",
+        "type": "module"
       }
     ],
 		"conflicts": []
