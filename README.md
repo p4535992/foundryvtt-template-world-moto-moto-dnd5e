@@ -24,40 +24,89 @@ With his permission I created this "empty" world with all settings and modules r
 
 The purpose is to help the "I want to be a master" without driving them crazy with the initial configurations.
 
+## Adventure Details
+
+**System:** D&D 5e
+
+**Starting Level:** Any
+
+**Length:** Short multi-session (10-12 hours)
+
+**Language:** English
+
+
+Short description and synopsis
+
+|  |  |  |
+| ---- | ---- | ---- |
+| ![Pictures & screenshots 1]() | ![Pictures & screenshots 2]() | ![Pictures & screenshots 3]() |
+
+
+## Credits
+
+**Author:**
+
+**Editor:**
+
+**Art Direction:**
+
+**Layout Artist:**
+
+**Playtesters:**
+
+**Cover Art:**
+
+**Sensitivity Reader:**
+
+**Cartography:**
+
+**Interior Art:**
+
 ## MidQOL advertisement by Moto Moto
 
 ### Midi does not work with:
 
-- Ready Set Roll
-- Better Rolls for 5e
-- Roll Groups
-- Fast Rolling by Default
-- Fast Rolls or Quick Rolls
-- Dice Tooltips
-- Taragnor's Gm Paranoia
-- WIRE(Whistler's Item Rolls Extended)
-- Minimal Roll Enhancements
-- Retroactive Advantage/Disadvantage
-- Max Crit
-- Multiattack 5e
+Ready Set Roll
+Better Rolls for 5e
+Roll Groups
+Fast Rolling by Default
+Fast Rolls or Quick Rolls
+Dice Tooltips
+Taragnor's Gm Paranoia
+WIRE(Whistler's Item Rolls Extended)
+Minimal Roll Enhancements
+Retroactive Advantage/Disadvantage
+Max Crit
+Multiattack 5e
+Effective Transferral
 
-### Midi has Concentration conflicts with these modules:
+### Midi has Concentration conflicts with these modules (Only use one, shut the others off) :
 
-- Concentration Notifier Module
+- Midiqol
+- Concentration Notifier Module (suggested)
 - Combat Utility Belt Concentrator
 
 ### The following modules have template settings that step on midi:
 
 - Spell Template Manager
+- Automated Animations
+- SIFT
 
-### Midi Notes:
+### Other Midi Notes:
 
 - Advanced Spell Effects module is in beta in v10 and often the culprit of things...
+
 - Midi requires Item Macro to have its "Character sheet hooks" feature set to unchecked in order for on use macros to work right.
+
 - When editing owned items(items on actors) active effects beware of duplicating active effects that interfere.  Always check the actors effect tab for rogue ae's.
-- If you are on dnd5e 2.1.x update to 2.1.5 and you can run the newest midi/dae/dfreds ce 
 - Dfreds CE 4.0 requires midi 32+ and dae 22+.
-- Midi now requires sight to be setup on all monsters or the players will get unseen attacker advantage.
+
+- Dnd5e 2.0.3 requires legacy versions of midi 24 and dae 14.
+
+- Midi now requires sight to be setup on all monsters or the players will get unseen attacker advantage.  You can still toggle off vision check box, but range and detection settings must be present.  You can shut this off in midi rules tab, second checkbox from the top.
+
+- Temporary fix for Midi 35's incapacitated notification spam (Credit to Chris https://discord.com/channels/170995199584108546/1010273821401555087/1089471749692870729):
+_Comment out line 1536 in utils.js to have midi-qol not give a notification_
 
 ## Suggested module setting for a Midi Better Behaviour:
 
@@ -82,23 +131,28 @@ File da importare per i vari sistemi
 
 https://discord.com/channels/772596237605011466/9174248893407846
 
-## Adventure Details
+## Sources of premade stuff for Midiqol:
 
-**System:** D&D 5e
+Midi Sample Items Compendium(comes with the module)
 
-**Starting Level:** Any
+Midi SRD's compendiums(this is the manual install link)
+https://foundryvtt.com/packages/midi-srd
 
-**Length:** Short multi-session (10-12 hours)
+More Automated Spells Items and Features compendiums
+https://foundryvtt.com/packages/more-automated-spells-items-and-feats
 
-**Language:** English
+Mr.Primates premade macros:
+https://github.com/MrPrimate/ddb-importer/tree/main/macros
 
+Chris' Premade macros:
+https://github.com/chrisk123999/foundry-macros
 
-Short description and synopsis
+Chris' Module form of his macros:
+https://foundryvtt.com/packages/chris-premades
 
-|  |  |  |
-| ---- | ---- | ---- |
-| ![Pictures & screenshots 1]() | ![Pictures & screenshots 2]() | ![Pictures & screenshots 3]() |
-
+Activation condition examples by ThatLonelyBugbear
+https://github.com/thatlonelybugbear/FoundryMacros/wiki/MidiQOL-activation-conditions-examples 
+bugbears macros has hexblade curse
 
 ## Installation Wold
 
@@ -133,27 +187,6 @@ Want to contribute to this world or similar projects?
 ## Dependencies
 
 - This template support and use the [Scene Packer](https://foundryvtt.com/packages/scene-packer) library module
-
-
-## Credits
-
-**Author:**
-
-**Editor:**
-
-**Art Direction:**
-
-**Layout Artist:**
-
-**Playtesters:**
-
-**Cover Art:**
-
-**Sensitivity Reader:**
-
-**Cartography:**
-
-**Interior Art:**
 
 ## [Changelog](./changelog.md)
 
