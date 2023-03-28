@@ -1,0 +1,130 @@
+// replace all instances of `abbr` with the abbreviation of your world including type and suffix
+// remove all comments from this file to make it valid JSON
+{
+  "name": "abbr-module",
+  "title": "Full Name Here",
+  "description": "<p>Description here</p>\n<hr />\n<blockquote>\n<p><strong>System: </strong>DnD5e<br /><strong>Starting Level: </strong>Any<br /><strong>Length:</strong> Short multi-session (10-12 hours)<br /><strong>Language:</strong> English</p>\n</blockquote>\n<hr />\n<p>World Smiths is a community of world builders creating high-quality world content for Foundry VTT.</p>\n<div style=\"display:flex;gap:1em\"><a style=\"flex:100%\" href=\"https://world-smiths.github.io/page/\" target=\"_blank\" rel=\"noopener\"><button type=\"button\">Our Projects</button></a><a style=\"flex:100%\" href=\"https://discord.gg/2YCFD8fxG7\" target=\"_blank\" rel=\"noopener\"><button type=\"button\">Our Discord</button></a></div>",
+  "author": "World Smiths",
+  "authors": [
+    {
+      "name": "World Smiths",
+      "url": "https://world-smiths.github.io/page"
+    },
+    {
+      "name": "Publisher Name",
+      "url": "https://publisher.com/"
+    }
+  ],
+  "url": "https://world-smiths.github.io/page/main.html",
+  "license": "https://raw.githubusercontent.com/World-Smiths/abbr/main/LICENSE.md",
+  "readme": "https://raw.githubusercontent.com/World-Smiths/abbr/main/README.md",
+  "bugs": "https://discord.gg/xXxXxXxX", // see ../../wiki/discord-invite-link.md
+  "changelog": "https://raw.githubusercontent.com/World-Smiths/abbr/main/CHANGELOG.md",
+  "flags": {
+    "allowBugReporter": true
+  },
+
+  "version": "0.x.x",
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": 9,
+
+  "scripts": [],
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "styles": [
+    "styles/ws.css"
+  ],
+  "languages": [], // leave this empty unless you are including language file in your world
+  // Only include the entries that your world uses
+  "packs": [ // Actors, Items, Journal Entries, Macro Commands, Playlists, RollTables or Scenes
+    {
+      "name": "actors",
+      "label": "ABBR",
+      "path": "packs/actors.db",
+      "entity": "Actor",
+      "type": "Actor",
+      "system": "dnd5e"
+    },
+    {
+      "name": "cards",
+      "label": "ABBR",
+      "path": "packs/cards.db",
+      "entity": "Card",
+      "type": "Card",
+      "system": "dnd5e"
+    },
+    {
+      "name": "items",
+      "label": "ABBR",
+      "path": "packs/items.db",
+      "entity": "Item",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "journals",
+      "label": "ABBR",
+      "path": "packs/journal.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry",
+      "system": "dnd5e"
+    },
+    {
+      "name": "macros",
+      "label": "ABBR",
+      "path": "packs/macros.db",
+      "entity": "Macro",
+      "type": "Macro",
+      "system": "dnd5e"
+    },
+    {
+      "name": "playlists",
+      "label": "ABBR",
+      "path": "packs/playlists.db",
+      "entity": "Playlist",
+      "type:": "Playlist",
+      "system": "dnd5e"
+    },
+    {
+      "name": "tables",
+      "label": "ABBR",
+      "path": "packs/tables.db",
+      "entity": "RollTable",
+      "type": "RollTable",
+      "system": "dnd5e"
+    },
+    {
+      "name": "scenes",
+      "label": "ABBR",
+      "path": "packs/scenes.db",
+      "entity": "Scene",
+      "type": "Scene",
+      "system": "dnd5e"
+    }
+  ],
+
+  "system": ["dnd5e"],
+  "dependencies": [
+    {
+      "name": "scene-packer",
+      "type": "module"
+    },
+    {
+      "name": "module-name",
+      "type": "module",
+      "manifest": "https://raw.githubusercontent.com/user/repo/main/module.json"
+    }
+  ],
+
+  "manifest": "https://raw.githubusercontent.com/World-Smiths/abbr/main/world.json",
+  "download": "https://raw.githubusercontent.com/World-Smiths/abbr/main/package.zip",
+  
+  "manifestPlusVersion": "1.2.0",
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/World-Smiths/abbr/main/cover.webp" // link to a cover image
+    }
+  ]
+}

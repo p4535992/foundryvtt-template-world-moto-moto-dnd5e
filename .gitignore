@@ -1,0 +1,28 @@
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Misc
+*.log
+
+# OSX
+.DS_Store
+
+# Foundry VTT
+*.lock
+
+# Never needed database files
+messages.db
+drawings.db
+fog.db
+settings.db
+users.db
+
+# Not used in this world database files
