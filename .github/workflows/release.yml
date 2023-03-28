@@ -35,12 +35,21 @@ jobs:
         id: sub_manifest_link_version
         uses: microsoft/variable-substitution@v1
         with:
-          files: 'src/module.json'
+          files: 'module.json'
         env:
           version: ${{steps.get_version.outputs.version-without-v}}
           manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
           download: https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/module.zip
 
+      - name: Prepare World Manifest
+        id: sub_manifest_link_version
+        uses: microsoft/variable-substitution@v1
+        with:
+          files: 'world.json'
+        env:
+          version: ${{steps.get_version.outputs.version-without-v}}
+          manifest: https://github.com/${{github.repository}}/releases/latest/download/world.json
+          download: https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/world.zip
 
       - name: Build Release
         run: |
@@ -67,7 +76,7 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './src/module.json,./package/module.zip'
+          artifacts: './module.json,./package/module.zip,./world.json,./world.zip'
           tag: ${{ env.RELEASE_VERSION }}
 
 
@@ -79,4 +88,4 @@ jobs:
       #    password: ${{ secrets.FOUNDRY_ADMIN_PW }}
       #    module-id: 288
       #    manifest-url: https://github.com/${{ github.repository }}/releases/download/${{ env.RELEASE_VERSION }}/module.json
-      #    manifest-file: ./src/module.json
+      #    manifest-file: ./module.json

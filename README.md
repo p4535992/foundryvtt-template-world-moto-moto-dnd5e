@@ -24,44 +24,6 @@ With his permission I created this "empty" world with all settings and modules r
 
 The purpose is to help the "I want to be a master" without driving them crazy with the initial configurations.
 
-## Adventure Details
-
-**System:** D&D 5e
-
-**Starting Level:** Any
-
-**Length:** Short multi-session (10-12 hours)
-
-**Language:** English
-
-
-Short description and synopsis
-
-|  |  |  |
-| ---- | ---- | ---- |
-| ![Pictures & screenshots 1]() | ![Pictures & screenshots 2]() | ![Pictures & screenshots 3]() |
-
-
-## Credits
-
-**Author:**
-
-**Editor:**
-
-**Art Direction:**
-
-**Layout Artist:**
-
-**Playtesters:**
-
-**Cover Art:**
-
-**Sensitivity Reader:**
-
-**Cartography:**
-
-**Interior Art:**
-
 ## MidQOL advertisement by Moto Moto
 
 ### Midi does not work with:
