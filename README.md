@@ -24,6 +24,8 @@ With his permission I created this "empty" world with all settings and modules r
 
 The purpose is to help the "I want to be a master" without driving them crazy with the initial configurations.
 
+**IMPORTANT:** for automatically import all the modules settings you must install the module [Module Management+](https://foundryvtt.com/packages/module-credits) and import the following [Package List](wiki/PackageList.json)
+
 ## MidQOL advertisement by Moto Moto
 
 ### Midi does not work with:
