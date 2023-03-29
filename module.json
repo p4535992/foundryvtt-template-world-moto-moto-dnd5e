@@ -2,7 +2,7 @@
 	"id": "template-world-moto-moto-dnd5e",
   "title": "Template World Moto Moto dnd5e",
   "description": "<h2 id=\"adventure-details\">Adventure Details</h2> <p><strong>System:</strong> D&D 5e</p> <p><strong>Starting Level:</strong> Any</p> <p><strong>Length:</strong> Short multi-session (10-12 hours)</p> <p><strong>Language:</strong> English</p> <p>Short description, images, screenshot and synopsis</p> <h2 id=\"credits\">Credits</h2> <p><strong>Author:</strong></p> <p><strong>Editor:</strong></p> <p><strong>Art Direction:</strong></p> <p><strong>Layout Artist:</strong></p> <p><strong>Playtesters:</strong></p> <p><strong>Cover Art:</strong></p> <p><strong>Sensitivity Reader:</strong></p> <p><strong>Cartography:</strong></p> <p><strong>Interior Art:</strong></p>",
-  "version": "1.0.2",
+  "version": "1.0.3",
 	"authors": [
 		{
 			"name": "p4535992",
@@ -128,9 +128,9 @@
       "module": "template-world-moto-moto-dnd5e"
     }
 	],
-	"scripts": [],
-	"esmodules": [ "scripts/module.js"],
-	"styles": [],
+  "scripts": [],
+  "esmodules": [ "scripts/module.js"],
+  "styles": [],
 	"compatibility": {
 		"minimum": 10,
 		"verified": 10,
